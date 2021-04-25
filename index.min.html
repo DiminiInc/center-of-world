@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#161616">
+<meta name="apple-mobile-web-app-title" content="Dimini Inc.">
+<meta name="application-name" content="Dimini Inc.">
+<meta name="msapplication-TileColor" content="#161616">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="initial-scale=1" id="viewport">
+<meta name="mailru-domain" content="8D5ZHxJsjMRCp9En">
+<title>To the Center of the World - Dimini Inc.</title>
+<meta name="description" content="To the Center of the World, Ludum Dare 48  - Dimini Inc.">
+<link rel="canonical" href="http://dimini.tk/en/software/center-of-world/web">
+<link rel="alternate" hreflang="en" href="http://dimini.tk/en/software/center-of-world/web">
+<link rel="alternate" hreflang="ru" href="http://dimini.tk/ru/software/center-of-world/web">
+<meta property="og:title" content="To the Center of the World - Dimini Inc.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://dimini.tk/en/software/center-of-world/web">
+<meta property="og:image" content="https://dimini.tk/site-logo.png">
+<meta property="og:description" content="To the Center of the World, Ludum Dare 48  - Dimini Inc.">
+<script>window.onload=function(){window.scrollTo(0,0);let t=0,n=300+Math.floor(700*Math.random());field=document.getElementById("field");for(var e=n;0<=e;e--){var o=document.createElement("img");o.src="./enemy.png",o.style.width="15px",o.style.top=Math.floor(94e3*Math.random())+5e3+"px",o.style.left=Math.floor(Math.random()*window.innerWidth/2)+window.innerWidth/4+"px",o.style.position="absolute",o.id="enemy"+e.toString(),document.getElementById("gamefield").appendChild(o)}let r=[],l=[],c=[];setInterval(function(){for(var e=n;0<=e;e--)(Math.floor(10*Math.random())>=c[e]||null==c[e])&&(r[e]=Math.floor(20*Math.random())-10,l[e]=Math.floor(20*Math.random())-10,c[e]=Math.floor(10*Math.random()))},100),setInterval(function(){for(var e=n;0<=e;e--)enemy1=document.getElementById("enemy"+e.toString()),enemy1.style.left=parseInt(enemy1.style.left,10)+r[e]+"px",enemy1.style.top=parseInt(enemy1.style.top,10)+l[e]+"px",player=document.getElementById("player"),enemy1=document.getElementById("enemy"+e.toString()),rectPlayer=player.getBoundingClientRect(),rectEnemy1=enemy1.getBoundingClientRect(),rect1=rectPlayer,rect2=rectEnemy1,!0==!(rect1.right<rect2.left||rect1.left>rect2.right||rect1.bottom<rect2.top||rect1.top>rect2.bottom)&&(a=0,t++,10==t&&alert("Try harder!"),20==t&&alert("Is this a rocket science for you?"),30==t&&alert("Are you searching for bugs or something?"),window.scrollTo(0,0))},200);let a=0;window.addEventListener("scroll",function(e){a++,player=document.getElementById("player"),enemy1=document.getElementById("enemy1"),rectPlayer=player.getBoundingClientRect(),rectEnemy1=enemy1.getBoundingClientRect(),rect1=rectPlayer,rect2=rectEnemy1,!0==!(rect1.right<rect2.left||rect1.left>rect2.right||rect1.bottom<rect2.top||rect1.top>rect2.bottom)&&(window.scrollTo(0,0),a=0,t++,10==t&&alert("Try harder!"),20==t&&alert("Is this a rocket science for you?"),30==t&&alert("Are you searching for bugs or something?")),window.innerHeight+window.pageYOffset>=document.body.offsetHeight&&(a<1e3?(alert("You have rushed to the bottom using full throttle, but unfortunately nobody from the crew have survived this journey!"),window.scrollTo(0,0),a=0):"none"==document.getElementById("cliffhanger").style.display?(alert("Congratulations! You have successfully reached the bottom, and landed your ship!"),document.getElementById("cliffhanger").style.display="block"):alert("At least that was what you have thought, but suddenly ground collapsed, and it seems like your problems have only begun.\n To be continued..."))});let i,d;!function(l,c=100){if(l&&"function"==typeof l){let t,n,o,r;window.addEventListener("scroll",function(e){n=n||window.pageYOffset,window.clearTimeout(t),t=setTimeout(function(){o=window.pageYOffset,r=o-n,l(r,n,o),n=null,o=null,r=null},c)},!1)}}(function(e){player=document.getElementById("player"),enemy1=document.getElementById("enemy1"),rectPlayer=player.getBoundingClientRect(),rectEnemy1=enemy1.getBoundingClientRect(),rect1=rectPlayer,rect2=rectEnemy1,d=0<e?(i=e,0):(i=0,-e),!0==!(rect1.right<rect2.left||rect1.left>rect2.right||rect1.bottom-i<rect2.top||rect1.top+d>rect2.bottom)&&(window.scrollTo(0,0),a=0,t++,10==t&&alert("Try harder!"),20==t&&alert("Is this a rocket science for you?"),30==t&&alert("Are you searching for bugs or something?"))})}</script>
+</head>
+<body style="margin:0;padding:0;overflow-x:hidden">
+<audio autoplay loop id="audio">
+<source src="music.wav" type="audio/wav">
+</audio>
+<img src="audio.png" style="top:0;left:0;position:fixed" class="glyphicon glyphicon-play-circle b-play" id="play" onclick="play()">
+<script>function play(){var a=document.getElementById("audio");a.paused?a.play():a.pause()}</script>
+<div id="site">
+<div style="background:linear-gradient(#fff,#000);height:100000px;overflow-x:hidden" id="gamefield">
+<img src="./ship.png" width="25px" style="top:100px;left:49%;position:fixed" id="player">
+<p style="top:10px;left:10px;position:absolute">As a part of a space exploration expedition you have reached some planet, it looks empty on the surface, but it has some big hole, which looks like a big mine, in it. You have decided to investigate it and try to land inside this mine.</p>
+<p style="top:5000px;left:10px;position:absolute">Looks like there are some creatures on this planet after all, we'd better avoid them</p>
+<p style="top:25000px;left:10px;position:absolute">It's getting dark in here</p>
+<p style="top:55000px;left:10px;position:absolute;color:#fff">Are we there yet?</p>
+<p style="top:60000px;left:10px;position:absolute;color:#fff">Are we there yet?</p>
+<p style="top:65000px;left:10px;position:absolute;color:#fff">Are we there yet?</p>
+<p style="top:75000px;left:10px;position:absolute;color:#fff">What about now?</p>
+<p style="top:85000px;left:10px;position:absolute;color:#fff">It is too dark in here, you are not sure for how long you are trying to reach the bottom. Maybe it was not the best idea, and it is better to emerge?</p>
+<p style="top:95000px;left:10px;position:absolute">Dimini Inc., 2021</p>
+</div>
+<div style="background:linear-gradient(#000,red);height:100px;overflow-x:hidden;display:none" id="cliffhanger">
+<img src="./ship.png" width="25px" style="top:100px;left:49%;position:fixed" id="player">
+</div>
+</div>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKDW72" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>!function(e,t,a,n){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});n=t.getElementsByTagName(a)[0],a=t.createElement(a);a.async=!0,a.src="//www.googletagmanager.com/gtm.js?id=GTM-TKDW72",n.parentNode.insertBefore(a,n)}(window,document,"script","dataLayer")</script>
+</body>
+</html>
